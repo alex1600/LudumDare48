@@ -12,10 +12,11 @@ public class ProjectileEnemy : MonoBehaviour
         transform.position += dir * Time.deltaTime *  speed;
     }
 
-    public static void CreateProj(ProjectileEnemy prefab, Vector3 pos, Vector2 dir)
+    public static void CreateProj(ProjectileEnemy prefab, Vector3 pos, Vector2 dir, float speed)
     {
         ProjectileEnemy proj = Instantiate(prefab, pos, Quaternion.identity, null);
         proj.dir = dir;
+        proj.speed = speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,6 +24,10 @@ public class ProjectileEnemy : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerManager.Instance.playerController.OnDeath();
+        }
+        if (collision.CompareTag("Outbound"))
+        {
+            Destroy(gameObject);
         }
     }
 }

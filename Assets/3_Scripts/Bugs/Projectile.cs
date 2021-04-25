@@ -40,6 +40,7 @@ public class Projectile : MonoBehaviour
         }
         if (collision.CompareTag("Boss"))
         {
+            BossLogic.Instance.nbHit++;
             FMODUnity.RuntimeManager.PlayOneShot("event:/boomRocket");
             Instantiate(BoomFX, transform.position + boomOffset, Quaternion.identity, null);
             Destroy(this.gameObject);

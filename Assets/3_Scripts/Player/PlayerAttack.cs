@@ -20,10 +20,13 @@ public class PlayerAttack : MonoBehaviour
         nbKilled++;
         if (nbKilled >= 4)
         {
-            DoorLogic.Instance.CanOpen(true);
-            FMODUnity.RuntimeManager.PlayOneShot("event:/success");
+            if (DoorLogic.Instance != null)
+            {
+                DoorLogic.Instance.CanOpen(true);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/success");
+            }
         }
-    } 
+    }
 
     public void OnShootRocket()
     {

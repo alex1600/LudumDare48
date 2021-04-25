@@ -6040,6 +6040,7 @@ MonoBehaviour:
   playerMovement: {fileID: 1472519144}
   playerController: {fileID: 1472519149}
   playerInput: {fileID: 1472519148}
+  playerAttack: {fileID: 0}
 --- !u!95 &1472519146
 Animator:
   serializedVersion: 3
@@ -6109,6 +6110,7 @@ MonoBehaviour:
   sprRenderer: {fileID: 1472519143}
   sortingGroup: {fileID: 1472519151}
   bloodFx: {fileID: 690500457}
+  hasRocket: 0
 --- !u!58 &1472519150
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7980,7 +7982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 70999529}
   tfBlockAscenseur: {fileID: 1418552071}
-  sceneIndex: 0
+  sceneIndex: 3
 --- !u!1 &1842511079
 GameObject:
   m_ObjectHideFlags: 0
