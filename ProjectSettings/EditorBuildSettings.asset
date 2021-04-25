@@ -14,5 +14,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/0_Scenes/ThirdFloor.unity
     guid: ac215e675d3bba946b511e122746ee8f
+  - enabled: 1
+    path: Assets/0_Scenes/FourFloor.unity
+    guid: 61f77d4658f18a34d97c55376c26ee5c
+  - enabled: 1
+    path: Assets/0_Scenes/FiveFloor.unity
+    guid: ddee26bd57ed9ce45a8defe6858e0e6a
+  - enabled: 1
+    path: Assets/0_Scenes/BossRoom.unity
+    guid: 7334084e729e6f94b87be04c18951f21
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8d2e03c2b1007a44388ecce775a678d6, type: 2}

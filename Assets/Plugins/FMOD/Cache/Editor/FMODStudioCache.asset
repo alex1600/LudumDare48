@@ -69,6 +69,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-2602844112639045079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/rocketShoot
+  m_EditorClassIdentifier: 
+  Path: event:/rocketShoot
+  guid: 9327400765d0b449bf23a5426d55b654
+  Banks:
+  - {fileID: 3276771411504412720}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1119618765288429620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,12 +163,14 @@ MonoBehaviour:
   - {fileID: 6594573367353376533}
   - {fileID: -4033715582570695471}
   - {fileID: 5999645446389742859}
+  - {fileID: -2602844112639045079}
+  - {fileID: 7318490298193908712}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3276771411504412720}
   StringsBanks:
   - {fileID: 461481676941190317}
-  stringsBankWriteTime: 637549549340522763
+  stringsBankWriteTime: 637549679601035925
   cacheVersion: 6
 --- !u!114 &461481676941190317
 MonoBehaviour:
@@ -162,11 +187,11 @@ MonoBehaviour:
   Path: ../../../LudumDare48FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637549549340522763
+  lastModified: 637549679601035925
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1170
+    Value: 1252
   Exists: 1
 --- !u!114 &587282570835558646
 MonoBehaviour:
@@ -250,11 +275,11 @@ MonoBehaviour:
   Path: ../../../LudumDare48FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637549549340512800
+  lastModified: 637549679601025951
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 346880
+    Value: 356416
   Exists: 1
 --- !u!114 &3726477544046847166
 MonoBehaviour:
@@ -390,6 +415,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 217120
   Exists: 1
+--- !u!114 &7318490298193908712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/boomRocket
+  m_EditorClassIdentifier: 
+  Path: event:/boomRocket
+  guid: d92575390b3bdb40b70eeb98ac28544b
+  Banks:
+  - {fileID: 3276771411504412720}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &8144291035925502818
 MonoBehaviour:
   m_ObjectHideFlags: 0

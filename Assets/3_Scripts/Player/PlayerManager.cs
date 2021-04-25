@@ -7,4 +7,5 @@ public class PlayerManager : MonoSingleton<PlayerManager>
     public PlayerMovement playerMovement;
     public PlayerController playerController;
     public PlayerInput playerInput;
+    public PlayerAttack playerAttack;
 }

@@ -11,9 +11,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private SpriteRenderer sprRenderer;
     [SerializeField] private SortingGroup sortingGroup;
     [SerializeField] private Transform bloodFx;
+    public bool hasRocket = false;
+
+    private void Start()
+    {
+        if(hasRocket)
+            animator.SetBool("hasRocket", hasRocket);
+    }
+
     public void SetWalkStatus(bool isWalking)
     {
         animator.SetBool("Walk", isWalking);
+    }
+
+    public void SetRocketStatus(bool hasRocket)
+    {
+        animator.SetBool("hasRocket", hasRocket);
+        this.hasRocket = hasRocket;
     }
 
     public void SetDirection(bool isLeft)
@@ -32,6 +46,7 @@ public class PlayerController : MonoBehaviour
         sprRenderer.enabled = false;
         bloodFx.transform.parent = null;
         bloodFx.gameObject.SetActive(true);
+        CameraShake.Shake(4.5f, 0.2f);
         StartCoroutine(RestartScene());
     }
 
