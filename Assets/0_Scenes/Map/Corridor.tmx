@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-up" width="4" height="6" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" source="Tiles.tsx"/>
+ <layer id="1" name="ground" width="4" height="6">
+  <data encoding="csv">
+27,27,27,0,
+27,0,27,0,
+27,1,27,0,
+27,1,27,0,
+27,1,27,0,
+27,25,27,0
+</data>
+ </layer>
+ <layer id="6" name="onground" width="4" height="6">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,3221225479,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="middle" width="4" height="6">
+  <data encoding="csv">
+0,0,0,0,
+0,14,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="above" width="4" height="6">
+  <data encoding="csv">
+5,4,2684354565,0,
+1610612740,16,2684354564,0,
+1610612740,13,2684354564,0,
+1610612740,13,2684354564,0,
+1610612740,11,2684354564,0,
+1610612741,3221225476,3221225477,0
+</data>
+ </layer>
+</map>

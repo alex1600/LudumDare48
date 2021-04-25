@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="5" height="6" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="2">
+ <tileset firstgid="1" source="ProtoDarkTileset.tsx"/>
+ <tileset firstgid="14" source="Tiles.tsx"/>
+ <layer id="1" name="below" width="5" height="6">
+  <data encoding="csv">
+0,0,0,0,0,
+0,15,21,15,0,
+0,14,14,14,0,
+0,14,14,14,0,
+0,14,14,14,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="onground" width="5" height="6">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,3221225492,3221225492,3221225492,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="middle" width="5" height="6">
+  <data encoding="csv">
+40,40,40,40,40,
+40,0,0,0,40,
+40,0,0,0,40,
+40,0,0,0,40,
+40,0,0,0,40,
+40,38,38,38,40
+</data>
+ </layer>
+ <layer id="3" name="above" width="5" height="6">
+  <data encoding="csv">
+18,17,17,17,2684354578,
+1610612753,16,23,2147483664,2684354577,
+1610612753,19,0,3221225491,2684354577,
+1610612753,19,0,3221225491,2684354577,
+1610612753,22,1610612755,1610612758,2684354577,
+1610612754,3221225489,3221225489,3221225489,3221225490
+</data>
+ </layer>
+</map>
