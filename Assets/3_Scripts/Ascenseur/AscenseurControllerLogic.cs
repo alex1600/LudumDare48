@@ -9,12 +9,22 @@ public class AscenseurControllerLogic : MonoSingleton<AscenseurControllerLogic>
     [SerializeField] private Animator animator;
     [SerializeField] private Transform tfBlockAscenseur;
     [SerializeField] private int sceneIndex;
+    [SerializeField] private bool endGame = false;
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
             SetStatusDoor(false);
-            StartCoroutine(GoDown());
+            if (endGame)
+            {
+                StartCoroutine(GoUp());
+
+            }
+            else
+            {
+                StartCoroutine(GoDown());
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D col)
@@ -38,6 +48,14 @@ public class AscenseurControllerLogic : MonoSingleton<AscenseurControllerLogic>
         PlayerManager.Instance.transform.DOMove(tfBlockAscenseur.position + Vector3.down * 2, 3);
         FaderLogic.Instance.FadeIn();
         StartCoroutine(LoadNextScene());
+    }
+    private IEnumerator GoUp()
+    {
+        FaderLogic.Instance.EndGame();
+        PlayerManager.Instance.playerController.OnAnimationAscenseurDown();
+        yield return new WaitForSeconds(1f);
+        tfBlockAscenseur.DOMove(tfBlockAscenseur.position + Vector3.up * 2, 3);
+        PlayerManager.Instance.transform.DOMove(tfBlockAscenseur.position + Vector3.up * 2, 3);
     }
 
     private IEnumerator LoadNextScene()
